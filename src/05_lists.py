@@ -26,4 +26,5 @@ print(x)
 print(len(x))
 
 # Print all the values in x multiplied by 1000
+print([item * 1_000 for item in x])
 print(list(map(lambda x: x * 1_000, x)))
