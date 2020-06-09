@@ -31,5 +31,11 @@ import sys
 import calendar
 from datetime import datetime
 
-if __name__ == "main":
-    print(sys.argv)
+if __name__ == "__main__":
+    arg_count = len(sys.argv)
+    now = datetime.now()
+    year = now.year if arg_count < 2 else int(sys.argv[1])
+    month = now.month if arg_count < 3 else int(sys.argv[2])
+    usage = 'usage: <program_name.py> [year] [month]'
+
+    print(calendar.month(year, month) if arg_count < 4 else usage)
