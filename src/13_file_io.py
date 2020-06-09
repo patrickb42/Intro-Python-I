@@ -11,8 +11,7 @@ from io import DEFAULT_BUFFER_SIZE
 # Print all the contents of the file, then close the file
 # Note: pay close attention to your current directory when trying to open "foo.txt"
 
-# with open('foo.txt', 'r', buffering=DEFAULT_BUFFER_SIZE) as foo:
-with open('foo.txt', 'r', buffering=2) as foo:
+with open('foo.txt', 'r', buffering=DEFAULT_BUFFER_SIZE) as foo:
     for buffer in foo:
       print(buffer, end = '')
 
