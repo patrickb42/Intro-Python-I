@@ -16,7 +16,7 @@ print(f1(1, 2))
 # Note: Google for "python arbitrary arguments" and look for "*args"
 
 def f2(*args):
-    return reduce(lambda sum, arg : sum + arg, args)
+    return reduce(lambda sum, arg: sum + arg, args)
 
 print(f2(1))                    # Should print 1
 print(f2(1, 3))                 # Should print 4

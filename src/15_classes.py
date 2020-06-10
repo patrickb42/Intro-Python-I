@@ -3,7 +3,7 @@
 
 class LatLon:
     def __init__(self, lat, lon):
-        self.lat=lat
+        self.lat = lat
         self.lon = lon
 
 # Make a class Waypoint that can be passed parameters `name`, `lat`, and `lon` to the
